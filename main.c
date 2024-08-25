@@ -15,9 +15,9 @@ int brushsize = 1;
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
 	if (key == GLFW_KEY_MINUS && action == GLFW_PRESS )
-		brushsize++;
-	if(key == GLFW_KEY_EQUAL && action == GLFW_PRESS)
 		brushsize--;
+	if(key == GLFW_KEY_EQUAL && action == GLFW_PRESS)
+		brushsize++;
 }
 
 
@@ -94,8 +94,8 @@ matrix[i] = (int*)calloc(ROWS,sizeof(int));
 	glClearColor(1,1,1,1);			// bg white to show work area of mouse
 
 	glBegin(GL_POINTS);
-	for(int y=ROWS-1;y>=0;--y){
-	for(int x=0;x<COLS;++x){		//fill bg as black/void
+	for(int x=ROWS-1;x>=0;--x){
+	for(int y=0;y<COLS;++y){		//fill bg as black/void
 	glColor3f(0,0,0);
 	glVertex2f(x-(ROWS/2),y-(COLS/2));
 	
