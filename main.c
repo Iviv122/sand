@@ -83,7 +83,7 @@ matrix[i] = (int*)calloc(ROWS,sizeof(int));
 
 	for(int y=-brushsize;y<brushsize+1;y++){
 	for(int x=-brushsize;x<brushsize+1;x++){
-		if(X+x >0 && X+x<500-1){
+		if(X+x >0 && X+x<500-1 && Y+y < 0 && Y+y > -500){
 		setSand(matrix,X+x,Y+y);
 	 }}}
 	}
