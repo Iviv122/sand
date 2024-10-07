@@ -1,3 +1,5 @@
+!CAUTION code is unreadable and hard to scale. Next projects are better in terms of scale but readability still a problem
+
 Simple sand simulation 
 
 Left mouse button -place sand
